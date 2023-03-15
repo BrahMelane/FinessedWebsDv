@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+    <title>FinessedWebs</title>
+
+    <style type="text/css">
+     header.logo{
+            background-repeat: no-repeat;
+            background-size: 220px;
+            background-position: center;
+            background: #303642;
+             padding: 0px 0px 0px 0px;
+                height: 150px;
+                top: 0px;
+                width: 100%;
+                z-index: 50;}
+                nav{
+            margin: 27px auto 0;
+            position: relative;
+            width: 590px;
+            height: 50px;
+            background-color: #34495e;
+            border-radius: 8px;
+            font-size:0 ;
+        }
+        nav a{
+            line-height: 50px;
+            height: 100%;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        div.animation{
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 8px;
+        }
+        a:nth-child(1){
+            width: 100px
+        }
+        a:nth-child(2){
+            width: 110px; 
+        }
+        a:nth-child(3){
+            width:100px
+        }
+        a:nth-child(4){
+            width:160px;
+        }
+        a:nth-child(5){
+            width:120px
+        }
+        nav.start-home, a:nth-child(1):hover~.animation{
+            width: 100px;
+            left: 0;
+            background-color: #42788a;
+        }
+        nav.start-about, a:nth-child(2):hover~.animation{
+            width: 110px;
+            left:100px;
+            background-color: #42788a;
+        }
+         nav.start-blog, a:nth-child(3):hover~.animation{
+            width: 100px;
+            left:210px;
+            background-color: #42788a;
+        }
+         nav.start-portefolio, a:nth-child(4):hover~.animation{
+            width: 160px;
+            left:310px;
+            background-color: #42788a;
+        }
+         nav.start-contact, a:nth-child(5):hover~.animation{
+            width: 120px;
+            left:470px;
+            background-color: #42788a;
+        }
+        .container {
+  display: flex;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.left {
+  width: 40%;
+  float: left;
+  background-color: #ccc;
+  padding: 50px;
+  box-sizing: border-box;
+  background-image: url(images/Finessed\ Logo.png);
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-attachment: scroll;
+  
+}
+
+.right {
+  width: 60%;
+  float: right;
+  
+}
+.right video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+article{
+            margin-left: 150px;
+            margin-right: 150px;
+            font-size: 25px; 
+            padding-top: 15px;
+        }
+
+          
+        
+body{
+            text-align: center;
+            background-color: #3ab7b3;
+            color: whitesmoke;
+        }
+       
+        
+            .footer{
+        background-color: #42788a;
+        padding: 0.5em 0;
+        height: 130px;
+        justify-content: center;
+    }
+        
+        .social-icon{
+            width: 110px;
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .social-icon:hover{
+            color: white;
+        }
+        .column{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:200px ;
+            margin-right:200px ;
+
+        }
+        .column1, .column2, .column3{
+            width: 30%;
+            height: 150px;
+            background-color:;
+            display: ;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30%;
+        }
+        .space{
+            width: 2%;
+        }
+        .bottom-space{
+            height: 50px;
+        }
+    </style>
+
+    </head>
+    <body>
+
+        <div>
+            <header class="logo"><img src="images/Finessed Logo.png"
+             alt="logo" width="350" height="150" >
+            </header>
+        </div>
+
+        <Div>
+            <h1>Finessed Webs</h1>
+        </Div>
+
+        <header>
+            <div>
+                <nav><a href="#home">Home</a>
+                <a href="#content">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <div class="animation start-home"></div>
+                </nav>
+            </div>
+        </header>
+        
+            <div class="container">
+                <div class="left">
+                  <h2></h2>
+                  <p></p>
+                  
+                </div>
+                <div class="right">
+                    <video src="images/Stance.mp4"
+                    poster="images/Finessed Webs.png"
+                    width="" height=""
+                    autoplay
+                    muted
+                    loop></video>
+                </div>
+              </div>
+
+              <div id="content">
+                <div >
+                    <h2 id="home">Finessed Webs Website Design</h2>
+                    <article class="Article">
+                        <div class="motive">
+                            <p class="4-Motive">Here at <b>Finessed Webs</b> we focus on building small businesses in our communities, more than half of small business owners start their own businesses to be their own boss. Motivated by the idea of creating something from the ground up. One way to help your business grow is by having a website.  One of the main reasons you should have a website for your business is to increase your organization's credibility.</p>
+                                <p class="4-Motive">A business’s online presence, regardless of industry, can have a massive impact on its success. In this day and age, some businesses still don’t realize that a majority of their customers will visit their website before making a purchase. Having a strong online presence, particularly a website, can be make or break for generating more revenue.</p>
+                                <h2 id="content">What is An Informational Website?</h2>
+    
+                                <p>
+                                    Informational websites are those sites which are created in order to provide a customized and branded resource for potential and active customers, members, investors and so forth. These websites are usually content and design driven. 
+                                     <b>Finessed Webs</b> prides itself on being cost-effective for practically any type of business needing an informational website. For your business, a superb informational website can be a very effective sales tool. 
+                                     </p><p>
+                                 It can be used to gather leads, educate potential customers about your business, and serve as your company's initial point of contact with its clients. Its availability 24/7/365 is arguably its best feature. 
+                                 The performance of the website depends on more than just the information there. Another important factor in turning a visitor into a customer is design. Having a beautifully designed website that is jam-packed with details about your
+                                  business and the goods or services you offer will significantly improve how other people view your company.</p>
+                            </div>
+                    </article>
+                </div>
+                <hr>
+               
+        <div class="column" id="contact">
+            <div class="Article column1">
+                <p><b><u><i>Contact:</i></u></b><br>
+                    Lucia: 082 859 0188<br>
+                    Mike: 076 667 9185<br>
+                    Jenny: 083 620 6436                 
+                </p><br>
+                <p>
+                    <b><u><i>Email:</i></u></b><br>
+                    YourGmail@gmail.com
+                </p>
+
+                
+            </div>
+            <div class="space"></div>
+            <div class="Article column2">
+                <p>
+                    <b><u><i>Socials:</i></u></b><br>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    
+                    <a class="social-icon" href="https://instagram.com/finessedwebs"  target="_blank">Instagram <ion-icon name="logo-instagram"></ion-icon></a><br>
+                    <a class="social-icon" href="https://twitter.com/finessedwebs"  target="_blank">Twitter<ion-icon name="logo-twitter"></ion-icon></a>
+                </p>
+            </div>
+            <div class="space"></div>
+            <div class="Article column3">
+                <p><b><u><i>Banking Details:</i></u></b><br>
+                    Bank:Absa 0245878558
+                   
+                   </p>
+            </div>
+        </div>
+        <div class="bottom-space"></div>
+            <div><p></p>
+                <img src="images/Finessed Webs.png" alt="Finessed Webs" height="150">
+                <p><b><u><i>Finessed Webs Website Design</i></u></b></p></div>    
+        <div >
+             
+        </div>
+              </div>
+              <div class="bottom-space"></div>
+              <div class="footer">
+                <p>&#169 Finessed Webs Website Design &#183 Tel: +27 81 341 5651 &#183 View our Social Media and don&#8217t forget to follow and like.
+                </p>
+                <p>Designed by FinessedWebs</p>
+              </div>
+    </body>     
+       
+</html>
