@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+    <title>Finessed Webs</title>
+  <meta name="viewport" content="width=device-width, initial-scale">
+    <style type="text/css">
+        *{
+            scroll-behavior: smooth;
+        }
+       body{
+        background-color: #0ab7b3;
+        text-align: center;
+        color: whitesmoke;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        scroll-behavior: smooth;
+    }
+    @media(max-width:100%){
+        .more{
+            font-size:5px ;
+            
+            
+        }
+
+    }
+    .logo{
+            background-repeat: no-repeat;
+            background-size: 220px;
+            background-position: center;
+            background: #303642;
+             padding: 0px 0px 0px 0px;
+                height: 180px;
+                top: 0px;
+                width: 100%;
+                z-index: 50;
+    }
+    nav{
+            margin: 27px auto 0;
+            position: relative;
+            width: 590px;
+            height: 50px;
+            background-color: #34495e;
+            border-radius: 8px;
+            font-size:0 ;
+    }
+    nav a{
+            line-height: 50px;
+            height: 100%;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+    }
+    /*nav*/div.animation{
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 8px;
+    }
+    a:nth-child(1){
+            width: 100px
+    }
+    a:nth-child(2){
+            width: 110px; 
+    }
+    a:nth-child(3){
+            width:100px
+    }
+    a:nth-child(4){
+            width:160px;
+    }
+    a:nth-child(5){
+            width:120px
+    }
+    nav.start-home, a:nth-child(1):hover~.animation{
+            width: 100px;
+            left: 0;
+            background-color: #1abc9c;
+    }
+    nav.start-about, a:nth-child(2):hover~.animation{
+            width: 110px;
+            left:100px;
+            background-color: #e74c3c;
+    }
+    nav.start-blog, a:nth-child(3):hover~.animation{
+            width: 100px;
+            left:210px;
+            background-color: #3498db;
+    }
+    nav.start-portefolio, a:nth-child(4):hover~.animation{
+            width: 160px;
+            left:310px;
+            background-color: #9b59b6;
+    }
+    nav.start-contact, a:nth-child(5):hover~.animation{
+            width: 120px;
+            left:470px;
+            background-color: #e67e22;
+    }
+    span{
+            color: #2BD6B4;
+    }
+    .bottom-space{
+            height: 40px;
+        }
+        .container {
+  display: flex;
+  height: 700px;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+    }
+    .left {
+        font-size: 30px;
+  width: 70%;
+  float: left;
+  background-color: #ccc;
+  padding: 50px;
+  /*box-sizing: ;*/ 
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-attachment: scroll;
+  
+    }
+    .right {
+  width: 30%;
+  float: right;
+  background-image: url(images/Meeting.jpg);
+    }
+    .right video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    video {
+  width: 100%;
+  height: 100%;
+  border: none;
+    }
+    .slogan{
+        
+        font-size: 20px;
+    }
+    .doc{
+            width: 110px;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .doc:hover{
+            color: black;
+        }
+    .social-icon{
+            width: 110px;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .social-icon:hover{
+            color: black;
+        }
+        .Instagram:hover{
+            color: yellow;
+        }
+        .Instagram{
+            width: 110px;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .Twitter:hover{
+            color: blue;
+        }
+        .Twitter{
+            width: 110px;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .Facebook:hover{
+            color: skyblue;
+        }
+        .Facebook{
+            width: 110px;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .column{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:200px ;
+            margin-right:200px ;
+            font-size: 25px;
+
+        }
+        .column1, .column2, .column3{
+            width: 30%;
+            height: 150px;
+            /*background-color:;*/
+           /* display: ;*/
+            justify-content: center;
+            align-items: center;
+            border-radius: 30%;
+        }
+        .space{
+            width: 2%;
+        }
+        .bottom-space{
+            height: 50px;
+        }
+      footer{
+        background-color: #42788a;
+        padding: 0.5em 0;
+        height: 130px;
+        justify-content: center;
+        font-size: 15px;
+        text-align: center;
+    }
+     /*.Image{
+        background-image: url(images/Online.jpg);
+        height:550px ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left:30% ;
+        margin-right:30% ;
+        
+
+        
+     }  */
+       .more{
+        margin-left:20%;
+        margin-right: 20%;
+       }
+       hr{
+        width: 400px;
+       }
+       .o{
+        width: 400px;
+       }
+       .form{
+        background-color: white;
+        justify-content: left;
+        display: grid;
+        text-align: left;
+        border-style: none;
+        padding-left: 50px;
+        padding-bottom: 50px;
+       }
+       .form select, input, textarea{
+       
+        justify-content: left;
+        height: 50px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        width: 199px;
+border-radius: 8px;
+
+border-color: black;
+
+box-shadow: none;
+
+       }
+       .form textarea{
+        height: 120px;
+        width: 280px;
+
+       }
+       .form h2{
+        color: #0ab7b3;
+       }
+       .submit{
+        background-color: #0ab7b3;
+        color: whitesmoke;
+       }
+       
+      
+       
+    
+    </style>
+    </head>
+    <body>
+    
+        <div>
+
+            <header class="logo"><img src="images/Finessed Logo.png"
+                alt="logo" width="380" height="180" >
+            </header>
+
+        </div>
+
+        <div>  
+            <div><b><h1>Finessed Webs</h1></b></div>
+            
+                <div>
+                    <nav><a href="#home">Home</a>
+                    <a href="#content">About</a>
+                    <a href="#Socials">Socials</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#Email">Email</a>
+                    <div class="animation start-home"></div>
+                    </nav>
+                </div>
+
+               
+
+                <div class="bottom-space"></div>
+
+               <div class="container">
+                <div class="left">
+                    <h2>Finessed Webs Website<br>
+                        Design
+                        </h2>
+                        <hr>
+                        <p>Here at <b>Finessed Webs</b>, our priority is to assist small enterprises expand their businesses to the digital world! Most of business owners start their own businesses to become their own boss, driven by the desire to build something from the ground up. 
+                            <br>
+                            <p><p class="slogan"><b>“Let’s Make It Easy”</b><br></p>
+                            </p>
+
+                </div>
+                <div class="right">
+                    <video src="images/"
+                    poster="images/Meeting.jpg"
+                    width="" height=""
+                    autoplay
+                    muted
+                    loop></video>
+                </div>
+               </div>
+              
+               <div><img src="images/Online.jpg" alt="online" height="300px" id="content"></div>
+               <div class="more"><p><i> Having a website is one way to help your company grow. One of the primary reasons you should have a website for your company is to improve its credibility – And you can trust us with that.
+                The online presence of a company, regardless of industry, can have a significant impact on its success. At the present time, some businesses still fail to recognize that the majority of their customers will visit their website before making a purchase, thus, having a strong online presence, particularly a website, can make or break your ability to generate leads.</i></p></div>
+             
+
+            
+        </div>
+        <div >
+
+
+
+            <hr class="o">
+
+            <div class="form" id="contact">
+                <h2>Your Details</h2>
+                <form action="https://formspree.io/f/meqwpepv" method="post">
+                    <input type="text" name="Name" placeholder="Full Name" required><br>
+                    <input type="email" name="Email" placeholder="Email" required><br>
+                    <input type="tel" name="Telephone" placeholder="Tel" required><br>
+                    <select name="province">
+                <option>Gauteng</option>
+                <option>Western Cape</option>
+                <option>Eastern Cape</option>
+                <option>Northen Cape</option>
+                <option>North West</option>
+                <option>Limpopo</option>
+                <option>Kwazulu-Natal</option>
+                <option>Free State</option>
+                <option>Mpumalanga</option>
+                    </select><br>
+                    <textarea name="Message" placeholder="Message"></textarea>
+                   
+                        <br><br>
+                  
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+               
+<div class="column" >
+            <div class="Article column1">
+
+                <p id=""><b><u><i>Contact:</i></u></b><br>
+                   Melane: +27 79 944 1671<br>
+                    Naledi: +27 67 112 2347<br>                 
+                </p>
+
+                <br>
+
+                <p id="Email">
+                    <b><u><i>Email:</i></u></b><br>
+                    FinessedWebs@gmail.com
+                </p>
+
+                
+            </div>
+
+            <div class="space">
+               
+            </div>
+
+            <div class="Article column2">
+
+                <p id="Socials">
+                    <b><u><i>Socials:</i></u></b><br>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    
+                    <a class="Instagram" href="https://instagram.com/finessedwebs"  target="_blank">Instagram <ion-icon name="logo-instagram"></ion-icon></a><br>
+                    <a class="Twitter" href="https://twitter.com/finessedwebs"  target="_blank">Twitter<ion-icon name="logo-twitter"></ion-icon></a><br>
+                    <a class="Facebook" href="https://www.facebook.com/profile.php?id=100090579583586"  target="_blank">Facebook<ion-icon name="logo-facebook"></ion-icon></a><br>
+                    <a class="social-icon" href="https://www.tiktok.com/@melanemsipa0"  target="_blank">Tik Tok<ion-icon name="logo-tiktok"></ion-icon></a>
+                </p>
+
+            </div>
+
+            <div class="space"></div>
+
+            <div class="Article column3">
+                <p>
+                    <b><u><i>Banking Details:</i></u></b><br>
+                    Bank:Absa 0245878558<br>
+                    <b><u><i>Documents:</i></u></b><br>
+                   Requirements: <a href="images/FinessedWebs Website Requirements.pdf" class="doc" download="Payment " target="_blank" title="Payment">Get Started</a><br>
+                   Fees: <a href="images/Payment.pdf" class="doc" download="pdf" target="_blank">Payment</a>
+                </p>
+            </div>
+
+</div>
+<div class="bottom-space"></div>
+            <div><p></p>
+                <img src="images/Finessed Webs.png" alt="Finessed Webs" height="150">
+                </div>    
+        <div >
+             
+        </div>
+
+
+          </div>
+<div></div>
+
+          <div class="bottom-space"></div>
+              <footer>
+                <p>&#169 Finessed Webs Website Design &#183 Tel: +27 67 112 2347 &#183 View our Social Media and don&#8217t forget to follow and like.
+                </p>
+                <p>Designed by FinessedWebs</p>
+              </footer>
+
+    </body>
+</html>
